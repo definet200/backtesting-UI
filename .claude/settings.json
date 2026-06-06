@@ -4,7 +4,11 @@
       "PowerShell(git ls-remote https://github.com/definet200/backtesting-UI.git 2>&1)",
       "PowerShell(git init)",
       "PowerShell(git checkout -b main)",
-      "PowerShell(git add -A)"
+      "PowerShell(git add -A)",
+      "PowerShell(git remote add origin https://github.com/definet200/backtesting-UI.git)",
+      "PowerShell(git push -u origin main 2>&1)",
+      "Bash(sed -i 's/PORT=3001/PORT=3000/' .env)",
+      "Bash(sed -i 's#localhost:3001#localhost:3000#' web/.env web/.env.example)"
     ]
   }
 }

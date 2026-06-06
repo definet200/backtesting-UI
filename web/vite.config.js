@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react';
 // VITE_BFF_URL in web/.env.
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
-  const bff = env.VITE_BFF_URL || 'http://localhost:3001';
+  const bff = env.VITE_BFF_URL || 'http://localhost:3000';
   return {
     plugins: [react()],
     server: {

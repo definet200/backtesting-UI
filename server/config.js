@@ -28,7 +28,7 @@ loadDotEnv();
 
 export const config = {
   root,
-  port: Number(process.env.PORT || 3001),
+  port: Number(process.env.PORT || 3000),
   engineBaseUrl: (process.env.ENGINE_BASE_URL || 'http://localhost:8000').replace(/\/$/, ''),
   anthropicKey: process.env.ANTHROPIC_API_KEY || '',
   anthropicModel: process.env.ANTHROPIC_MODEL || 'claude-sonnet-4-6',

@@ -27,11 +27,11 @@ npm run web:install
 # 2. configure — copy and edit .env (engine URL + optional Anthropic key)
 cp .env.example .env        # ENGINE_BASE_URL=http://localhost:8000, ANTHROPIC_API_KEY=...
 
-# 3a. production: build the UI and serve everything from the BFF on :3001
+# 3a. production: build the UI and serve everything from the BFF on :3000
 npm run web:build
-npm start                   # → http://localhost:3001
+npm start                   # → http://localhost:3000
 
-# 3b. dev: BFF on :3001 + Vite HMR on :5173 (proxies /api → BFF)
+# 3b. dev: BFF on :3000 + Vite HMR on :5173 (proxies /api → BFF)
 npm run dev                 # terminal 1 (BFF)
 npm run web:dev             # terminal 2 (UI at http://localhost:5173)
 ```
