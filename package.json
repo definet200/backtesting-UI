@@ -1,0 +1,22 @@
+{
+  "name": "hs-bff",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "BFF / Orchestrator + chat UI between the frontend and the hs-compute backtest engine",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "web:install": "npm --prefix web install",
+    "web:build": "npm --prefix web run build",
+    "web:dev": "npm --prefix web run dev",
+    "setup": "npm install && npm run web:install && npm run web:build"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

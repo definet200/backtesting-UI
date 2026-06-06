@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(git ls-remote https://github.com/definet200/backtesting-UI.git 2>&1)",
+      "PowerShell(git init)",
+      "PowerShell(git checkout -b main)",
+      "PowerShell(git add -A)"
+    ]
+  }
+}
